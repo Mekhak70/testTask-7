@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# Nuxt.js build output
+.nuxt/
+
+# Nuxt.js generate static project output
+dist/
+
+# Nuxt.js specific ignore files
+nuxt.config.js.build
+
+# Environment variables
+.env
