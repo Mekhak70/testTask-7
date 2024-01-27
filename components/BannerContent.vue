@@ -167,7 +167,7 @@ export default {
     .title{
         text-align: start;
         color: #FFF;
-        font-family: Golos;
+        font-family: 'Golos', sans-serif;
         font-size: 114px;
         font-style: normal;
         font-weight: 900;
@@ -181,7 +181,7 @@ export default {
         width: 90.426%;
         height: 100px;
         color: var(--Grey-Light, #D0D0D0);
-        font-family: Golos;
+        font-family: 'Golos', sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -203,8 +203,8 @@ export default {
         align-items: center;
         border-radius: 16px;
         background: rgba(255, 255, 255, 0.10);
-        color: var(--Grey-Light, #D0D0D0);
-        font-family: Golos;
+        color:  #D0D0D0;
+        font-family: 'Golos', sans-serif;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
@@ -223,8 +223,8 @@ export default {
         align-items: center;
         border-radius: 16px;
         background: rgba(255, 255, 255, 0.05);
-        color: var(--Grey-Light, #D0D0D0);
-        font-family: Golos;
+        color:  #D0D0D0;
+        font-family: 'Golos', sans-serif;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
@@ -282,8 +282,8 @@ export default {
     position: absolute;
     right: 23px;
     top: 20px;
-    color: var(--Grey-Light, #D0D0D0);
-    font-family: Golos;
+    color:  #D0D0D0;
+    font-family: 'Golos', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -309,8 +309,8 @@ export default {
     display: flex;
     align-items: center;
     height: 34px;
-    color: var(--Dark-White, #D2D2D2);
-    font-family: Golos;
+    color:  #D2D2D2;
+    font-family: 'Golos', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -326,16 +326,16 @@ export default {
     gap: 2px;
 }
 .criptoNameText{
-    color: var(--Grey-Light, #D0D0D0);
-    font-family: Golos;
+    color:  #D0D0D0;
+    font-family: 'Golos', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
 .criptoShortName{
-    color: var(--Grey, #959595);
-    font-family: Golos;
+    color:  #959595;
+    font-family: 'Golos', sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
