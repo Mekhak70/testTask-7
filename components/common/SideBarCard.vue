@@ -19,11 +19,11 @@
             <div class="info_text">{{ date }}</div>
             <div class="views">
                 <div class="view-number-wrapper">
-                    <img :src="require('@/public/icons/eye-icon.svg')" alt="Card Image">
+                    <img :src="eyeIconSrc" alt="Card Image">
                     <div class="view-number">{{ viewNumber }}</div>
                 </div>
                 <div class="info_text">
-                    <img :src="require('@/public/icons/back-icon.svg')" alt="Card Image">
+                    <img :src="backIconSrc" alt="Card Image">
                 </div>
             </div>
         </div>
@@ -39,6 +39,12 @@ export default {
         image: String,
         viewNumber: String,
         date: String
+    },
+    data() {
+        return {
+            backIconSrc: require('@/public/icons/back-icon.svg'),
+            eyeIconSrc: require('@/public/icons/eye-icon.svg')
+        };
     }
 }
 </script>

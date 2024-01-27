@@ -118,12 +118,12 @@
 export default {
   data() {
     return {
-      neonmanSrc: require('@/public/neonman.svg'),
-      BitcoinLogo: require('@/public/BitcoinLogo.svg'),
-      arrowIcon: require('@/public/arrow.svg'),
-      ethereum: require('@/public/ethereum.svg'),
-      tron: require('@/public/tron.svg'),
-      monero: require('@/public/monero.svg'),
+      neonmanSrc: require('@/public/blockchain-icons/neonman.svg'),
+      BitcoinLogo: require('@/public/blockchain-icons/bitcoinLogo.svg'),
+      arrowIcon: require('@/public/icons/arrow.svg'),
+      ethereum: require('@/public/blockchain-icons/ethereum.svg'),
+      tron: require('@/public/blockchain-icons/tron.svg'),
+      monero: require('@/public/blockchain-icons/monero.svg'),
 
     };
   }

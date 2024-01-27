@@ -31,8 +31,8 @@ export default {
   data() {
     return {
       logoSrc: require('@/public/LOGO.svg'),
-      ruFlagSrc: require('@/public/ru.svg'),
-      arrowSrc: require('@/public/arrow.svg')
+      ruFlagSrc: require('@/public/icons/ru.svg'),
+      arrowSrc: require('@/public/icons/arrow.svg')
     };
   }
 };

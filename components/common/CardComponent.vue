@@ -7,12 +7,12 @@
       <div class="date_info">
         <div class="info_text">{{ date }}</div>
         <div class="views">
-            <div class="view-number-wrapper">
-              <img :src="require('@/public/icons/eye-icon.svg')" alt="Card Image">
-              <div class="view-number">{{viewNumber}}</div>
-            </div>
+          <div class="view-number-wrapper">
+            <img :src="eyeIconSrc" alt="Card Image">
+            <div class="view-number">{{ viewNumber }}</div>
+          </div>
           <div class="info_text">
-            <img :src="require('@/public/icons/back-icon.svg')" alt="Card Image">
+            <img :src="publicIconSrc" alt="Card Image">
           </div>
         </div>
 
@@ -28,7 +28,7 @@
       </div>
       <div class="card-text-footer">
         <div class="visit-icon-wrapper">
-          <img :src="require('@/public/icons/visit-icon.svg')" alt="Card Image">
+          <img :src="visitIconSrc" alt="Card Image">
         </div>
 
         <div class="links-container">
@@ -49,6 +49,13 @@ export default {
     imageSrc: String,
     date: String,
     viewNumber: String
+  },
+  data() {
+    return {
+      visitIconSrc: require('@/public/icons/visit-icon.svg'),
+      eyeIconSrc: require('@/public/icons/eye-icon.svg'),
+      publicIconSrc: require('@/public/icons/back-icon.svg'),
+    };
   }
 }
 </script>
@@ -61,10 +68,8 @@ export default {
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
-  /* flex-direction: column; */
   max-width: 865px;
   gap: 10px;
-  /* Adjust as needed */
 }
 
 .card-image img {
@@ -73,7 +78,6 @@ export default {
   height: auto;
   display: block;
 }
-
 
 .card-content {
   padding: 16px;
@@ -85,10 +89,6 @@ export default {
   align-items: center;
   padding: 16px;
   border-top: 1px solid #eeeeee;
-}
-
-.card-icons {
-  /* Style for your icons (e.g., FontAwesome) */
 }
 
 .date_info {
@@ -130,14 +130,14 @@ export default {
   width: 135px;
 }
 
-.view-number-wrapper{
+.view-number-wrapper {
   display: flex;
   align-items: center;
-  padding-right: 8px ;
+  padding-right: 8px;
   gap: 6px;
 }
 
-.view-number{
+.view-number {
   color: #D0D0D0;
   font-family: 'Golos', sans-serif;
   font-size: 14px;
@@ -175,7 +175,6 @@ export default {
 .card-text-footer {
   display: flex;
   align-items: flex-end;
-  /* height: 100%; */
   gap: 20px;
 }
 
@@ -196,7 +195,6 @@ export default {
   aspect-ratio: 1/1;
 }
 
-
 .link {
   color: #D0D0D0;
   font-family: 'Golos', sans-serif;
@@ -204,5 +202,4 @@ export default {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-</style>
+}</style>
