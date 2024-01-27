@@ -1,8 +1,36 @@
 <template>
   <div class="header">
     <div class="logo">
-      <img :src="logoSrc" alt="Logo" />
+      <div class="hamburgerMenu" >
+        <img :src="menuBarSrc" alt="Hamburger icon" />
+      </div>
+
+      <img :src="logoSrc" alt="Logo" class="logoImg" />
     </div>
+<div class="hamburger-menu">
+
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <div class="menu__btnContener">
+
+        <img :src="logoSrc" alt="Logo" class="logoImg" />
+
+      <div class="closeBatton">X</div>
+    </div>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="#">рейтинги</a></li>
+      <li><a class="menu__item" href="#">сервисы</a></li>
+      <li><a class="menu__item" href="#">обмен</a></li>
+      <li><a class="menu__item" href="#">отзывы</a></li>
+      <li><a class="menu__item" href="#">FAQ</a></li>
+      <li><a class="menu__item" href="#">о нас</a></li>
+      <li><a class="menu__item" href="#">контакты</a></li>
+    </ul>
+  </div>
+
+
     <div class="menu">
       <ul>
         <li>рейтинги</li>
@@ -15,7 +43,7 @@
       </ul>
       <div class="logOut">
         <div>
-          <span>войти</span>
+          <span class="logOutText">войти</span>
         </div>
         <div class="flag">
           <img :src="ruFlagSrc" alt="RU flag" />
@@ -32,7 +60,8 @@ export default {
     return {
       logoSrc: require('@/public/LOGO.svg'),
       ruFlagSrc: require('@/public/icons/ru.svg'),
-      arrowSrc: require('@/public/icons/arrow.svg')
+      arrowSrc: require('@/public/icons/arrow.svg'),
+      menuBarSrc: require('@/public/icons/headerBar-icon.svg')
     };
   }
 };
@@ -44,13 +73,14 @@ export default {
   padding: 0;
   margin: 0;
 }
-
+.hamburgerMenu{
+  display: none;
+}
 .header {
   width: 66.354%;
   height: 40px;
   display: flex;
   justify-content: space-between;
-  background-color: black;
   color: white;
 }
 
@@ -110,4 +140,194 @@ export default {
   font-weight: 900;
   line-height: 15px;
   text-transform: uppercase;
-}</style>
+}
+.hamburger-menu{
+  display: none;
+}
+@media only screen and (max-width: 744px) {
+  .hamburger-menu{
+  display: flex;
+}
+  /* Hide the menu on screens with a maximum width of 744px */
+  .menu ul {
+    display: none;
+  }
+
+  /* Adjust header styles for smaller screens */
+  .header {
+   width: 100%;
+
+
+    /* Check if this padding is having the desired effect */
+  }
+
+  /* Style for logOutText */
+  .logOutText {
+    color: var(--Grey-Light, #D0D0D0); /* Make sure --Grey-Light is defined and has a valid value */
+    font-family: Golos;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .hamburgerMenu{
+    display: flex;
+    padding: 14px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 11px;
+    background: rgba(255, 255, 255, 0.10);
+  }
+  .logo{
+    padding-left: 70px;
+    display: flex;
+    width: 334.5px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+  }
+  .logOut{
+    padding-right: 70px;
+  }
+  .logoImg{
+    width: 144.744px;
+    height: 37.303px;
+    flex-shrink: 0;
+  }
+
+
+
+
+/** */
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .hamburger-menu{
+  display: flex;
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+#menu__toggle:checked ~ .menu__btn{
+  top: 40px;
+  left: 50px;
+  opacity: 1;
+}
+.menu__btnContene{
+  width: 500px;
+  display: flex;
+  gap: 20px;
+}
+.menu__btn {
+  position: fixed;
+  top: 50px;
+  left: 70px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  text-align: start;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -115%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 145px 50px;
+  list-style: none;
+  border-radius: 0px 16px 16px 0px;
+  background: #16141F;
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.15);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding-bottom: 30px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+  color: var(--Grey-Light, #D0D0D0);
+/* Menu */
+  font-family: Golos;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+.hamburger-menu{
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+}
+
+.menu__btnContener{
+  display: flex;
+  align-items: center;
+  width: 659px;
+  justify-content: space-between;
+}
+.closeBatton{
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  background: #281941;
+  display: flex;
+  width: 20px;
+  height: 19px;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--Grey-Light, #D0D0D0);
+  text-align: center;
+  font-family: "Font Awesome 6 Free";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+}
+
+</style>

@@ -16,7 +16,7 @@
         </div>
     </div>
 </template>
-  
+
 <script>
 // Import the CardComponent
 import CardComponent from '@/components/common/CardComponent.vue';
@@ -38,7 +38,7 @@ export default {
     }
 }
 </script>
-  
+
 <style scoped>
 .cards-section {
     display: flex;
@@ -81,10 +81,15 @@ export default {
     align-items: center;
     justify-content: center;
 }
+@media only screen and (max-width: 744px) {
+  /* Hide the menu on screens with a maximum width of 744px */
+  .cards-section {
 
-@media (max-width: 600px) {
-    .cards-section {
-        flex-direction: column;
+    padding: 60px 50px ;
+    flex-direction: column;
+  }
+  .side-bar{
+        display: none;
     }
 }
 </style>

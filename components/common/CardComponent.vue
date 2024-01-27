@@ -40,7 +40,7 @@
     </div>
   </div>
 </template>
-  
+
 <script>
 export default {
   props: {
@@ -59,7 +59,7 @@ export default {
   }
 }
 </script>
-  
+
 <style scoped>
 .card {
   background: #171520;
@@ -202,4 +202,7 @@ export default {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}</style>
+}
+
+
+</style>

@@ -1,6 +1,7 @@
 <template>
     <div class="footer">
         <div class="content-1">
+        <div class="contentSmall">
             <div class="logo">
                 <img :src="logoSrc" alt="Logo" />
             </div>
@@ -20,22 +21,23 @@
             </div>
         </div>
 
-        <div class="content-2">
-            <div class="menu-items-container">
-                <div class="menu-headline">
-                    главное Меню
-                </div>
-                <ul>
-                    <li>рейтинги</li>
-                    <li>сервисы</li>
-                    <li>обмен</li>
-                    <li>отзывы</li>
-                    <li>FAQ</li>
-                    <li>о нас</li>
-                    <li>контакты</li>
-                </ul>
-
+        <div class="menu-items-container">
+            <div class="menu-headline">
+                главное Меню
             </div>
+            <ul>
+                <li>рейтинги</li>
+                <li>сервисы</li>
+                <li>обмен</li>
+                <li>отзывы</li>
+                <li>FAQ</li>
+                <li>о нас</li>
+                <li>контакты</li>
+            </ul>
+
+        </div>
+        </div>
+            <div class="content-2">
 
             <div class="contact-box">
                 <div class="menu-headline">
@@ -77,7 +79,7 @@
 
     </div>
 </template>
-  
+
 <script>
 
 import Button from '@/components/common/Button.vue';
@@ -100,23 +102,33 @@ export default {
     }
 };
 </script>
-  
-  
+
+
 <style>
 .footer {
     display: flex;
     gap: 174px;
-    height: 420px;
+    min-height: 420px;
     background: #16141F;
     padding: 0 323px;
 }
 
 .content-1 {
     display: flex;
+
+    gap: 174px;
+    width: max-content;
+
+}
+.menu-items-container{
+     padding-top: 124px;
+}
+.contentSmall{
+    display: flex;
     flex-direction: column;
     gap: 17px;
     width: max-content;
-    margin-top: 57px;
+    padding-top: 57px;
 }
 
 .content-2 {
@@ -260,5 +272,34 @@ export default {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+@media only screen and (max-width: 744px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding: 60px 41px 40px 41px;
+        flex-direction: column;
+
+        gap: 50px;
+
+    }
+    .content-1{
+        display: flex;
+        width: 604px;
+        /* align-items: flex-end; */
+        gap: 80px;
+        padding-left: 28px;
+    }
+    .content-2{
+        justify-content: start;
+        padding-left: 28px;
+        margin-top: 0;
+    }
+    .contentSmall{
+        padding-top: 0;
+    }
+    .menu-items-container{
+        padding-top: 65px;
+    }
 }
 </style>
