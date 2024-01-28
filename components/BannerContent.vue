@@ -475,8 +475,53 @@ input[type="number"] {
     clip-path: path("M371.068,95.328v-19.398H155.197v-11.41h41.88v-8.41h92.006V24.963h-27.707V4.831H89.49V8.486H29.674V24.9h50.426v9.413H31.806v26.17h-9.567v13.059h-22.493v35.9H16.57v49.183h15.885v23.036H13.86v11.846H2.056v6.689H13.86v36.929h15.79v22.783H12.932v13.207h18.85v9.337H146.18v4.637h143.802v-20.756H200.328v-3.831h23.877v-4.536h-23.877v-16.548h21.027v-15.436h-23.877v-7.122h23.877v-44.057h-13.195v-38.478h13.258V24.963H189.23v-11.886h19.463v-20.033H144.096v-5.644h132.532v-14.55h20.647v-7.752h-20.647v-28.776h18.024v-26.612h-39.718v-5.01h53.53Zm-222.035,173.78v-11.778h116.514v16.248H45.206v4.48H205.31v-10.122h-36.924v-12.366h49.954v17.889H123.25v-12.69h22.465Zm-89.9-95.543v23.495H55.47v-29.007h129.386v5.349h-73.582Z");
   }
 }
+@media only screen and (max-width: 1470px) {
+  .imgWrap {
+    width: 680px;
+    height: 675px;
+
+  }
+
+}
+@media only screen and (max-width: 1366px) {
+  .menu ul {
+    gap: 20px;
+  }
+  .imgWrap {
+    margin-left: 37px;
+    margin-top: 77px;
+    width: 630px;
+    height: 600px;
+}
+}
+
+@media only screen and (max-width: 1318px) {
+
+  .imgWrap{
+    margin-left: 37px;
+    margin-top: 127px;
+    width: 580px;
+    height: 550px;
+}
+}
+@media only screen and (max-width: 1215px) {
+
+.imgWrap{
+
+    margin-left: 37px;
+    margin-top: 159px;
+    width: 550px;
+    height: 520px;
+
+}
+}
 
 @media only screen and (max-width: 1167px) {
+  .imgWrap {
+    width: 804.296px;
+    height: 737px;
+    flex-shrink: 0;
+  }
 
   .bannerContenet {
     width: 100%;
@@ -506,7 +551,6 @@ input[type="number"] {
   }
 
   .contenet{
-
     height: 901px;
     position: absolute;
     z-index: 999;
@@ -536,14 +580,15 @@ flex-direction: column-reverse;
 .neonmanContener{
     position: absolute;
     z-index: 0;
-    right: -40px;
-    margin-top: 271px;
+    right: -100px;
+    margin-top: 180px;
     box-sizing: border-box;
-    width: 490px;
-    height: 737px;
+    width: 580px;
+    height: 770px;
     flex-shrink: 0;
     overflow: hidden;
     z-index: 9999;
+    /* right: -100px; */
 
     }
     .imgWrap img{
@@ -551,18 +596,15 @@ flex-direction: column-reverse;
         z-index: 0;
         overflow: hidden;
     }
-}
-@media only screen and (max-width: 1470px) {
-  .imgWrap {
-    width: 680px;
-    height: 675px;
+
+  .inputBox{
+    position: absolute;
+    z-index:9999999;
   }
 
-}
-@media only screen and (max-width: 1167px) {
-    .card{
+  .card{
         display: flex;
-        width: 644px;
+        width: 100%;
         padding: 20px;
         align-items: flex-start;
         gap: 10px;
@@ -570,8 +612,82 @@ flex-direction: column-reverse;
         background: #171520;
         box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.15);
     }
+
+
+}
+
+
+@media only screen and (max-width: 1150px) {
+    .neonmanContener{
+      width: 570px;
+      right: -95px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .neonmanContener{
+      right: -88px;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    .neonmanContener{
+      right: -80px;
+    }
+}
+@media only screen and (max-width: 1020px) {
+    .neonmanContener{
+      right: -75px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .neonmanContener{
+      right: -73px;
+    }
+}
+@media only screen and (max-width: 965px) {
+    .neonmanContener{
+      right: -69px;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .neonmanContener{
+      right: -63px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .neonmanContener{
+      right: -56px;
+    }
+}
+@media only screen and (max-width: 875px) {
+    .neonmanContener{
+      right: -54px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .neonmanContener{
+      right: -52px;
+    }
+}
+@media only screen and (max-width: 825px) {
+    .neonmanContener{
+      right: -48px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .neonmanContener{
+      right: -43px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .neonmanContener{
+      right: -40px;
+    }
 }
 @media only screen and (max-width: 743px) {
+  .inputBox {
+    position: static;
+
+}
   .neonmanContener{
     display: none;
   }
@@ -580,7 +696,7 @@ flex-direction: column-reverse;
   }
   .card{
     display: flex;
-    
+
     width: 350px;
 
     flex-direction: column;
@@ -591,6 +707,7 @@ flex-direction: column-reverse;
     padding: 0 20px;
   }
   .dataContener{
+    width: 100%;
     padding-top: 0;
   }
   .title{
@@ -606,7 +723,7 @@ flex-direction: column-reverse;
     white-space: wrap;
  }
 .text{
-    width: 350px;
+    width: 100%;
     color: var(--Grey-Light, #D0D0D0);
     font-family: Golos;
     font-size: 14px;
@@ -619,7 +736,7 @@ flex-direction: column-reverse;
     padding-top:25px;
 }
 .criptoBarContener{
-    width: 350px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -640,7 +757,7 @@ flex-direction: column-reverse;
     }
 .inputBox select{
     position: relative;
-    width: 350px;
+    width: 100%;
     display: flex;
     height: 57px;
     padding: 15px 23px;
@@ -649,18 +766,44 @@ flex-direction: column-reverse;
     align-self: stretch;
 }
 .inputBox{
-    width: 350px;
+    width: 100%;
 }
 
 .contenet{
-    height: 705px;
-    justify-content: center;
+  width: calc(97% - 20px);
+  height: 705px;
+  justify-content: center;
 }
 .select{
         width: 100%;
     }
     .inputBox input {
-       width: 304px;
+       width: 93.2%;
+       height: 57px;
     }
+
 }
+@media only screen and (max-width: 600px) {
+      .inputBox input {
+      width: 91.815%;
+      height: 57px;
+    }
+  }
+
+    @media only screen and (max-width: 500px) {
+      .inputBox input {
+      width: 90.108%;
+      height: 57px;
+
+
+    }
+
+  }
+    @media only screen and (max-width: 390px) {
+      .inputBox input {
+      height: 57px;
+      width: 87.108%;
+
+    }
+  }
 </style>

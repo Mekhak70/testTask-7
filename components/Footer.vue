@@ -105,225 +105,237 @@ export default {
 
 
 <style>
-.footer {
-    display: flex;
-    gap: 174px;
-    min-height: 420px;
-    background: #16141F;
-    padding: 0 323px;
-}
-
-.content-1 {
-    display: flex;
-
-    gap: 174px;
-    width: max-content;
-
-}
-.menu-items-container{
-     padding-top: 124px;
-}
-.contentSmall{
-    display: flex;
-    flex-direction: column;
-    gap: 17px;
-    width: max-content;
-    padding-top: 57px;
-}
-
-.content-2 {
-    display: flex;
-    gap: 190px;
-    margin-top: 124px;
-}
-
-.text-container {
-    width: 320px;
-}
-
-.text-container span {
-    color: #D0D0D0;
-    font-family: 'Golos', sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-}
-
-.contact-icons-container {
-    display: flex;
-    gap: 30px;
-    padding-top: 5px;
-}
-
-.menu-items-container {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.menu-items-container>ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.menu-headline {
-    color: #FFF;
-    font-family: 'Golos', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.menu-items-container>ul>li {
-    list-style: none;
-    color: #D0D0D0;
-    font-family: 'Golos', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.contact-box {
-    display: flex;
-    flex-direction: column;
-    width: 468px;
-    height: max-content;
-    gap: 18px;
-}
-
-.email-line {
-    display: flex;
-    gap: 40px;
-}
-
-.email {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.email span {
-    color: #D0D0D0;
-    font-family: 'Golos', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.note {
-    color: #D0D0D0;
-    font-family: 'Golos', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.time-line span {
-    color: #D0D0D0;
-    font-family: 'Golos', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.time-line {
-    display: flex;
-    gap: 10px;
-}
-
-.input-container {
-    display: flex;
-    gap: 8px;
-}
-
-.input-wrapper {
-    display: flex;
-    align-items: center;
-    background: #FFF;
-    border-radius: 8px;
-    padding: 0 16px;
-    width: 335px;
-}
-
-.input-wrapper input:focus {
-    border: none;
-    outline: none;
-}
-
-.input-wrapper input {
-    border: none;
-    width: 100%;
-}
-
-.privacy-content span {
-    color: rgba(255, 255, 255, 0.30);
-    font-family: 'Golos', sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-@media only screen and (max-width: 1420px) {
-
-
-}
-@media only screen and (max-width: 1550px) {
-
-  .footer   {
-    padding: 0 233px;
-    gap: 100px;
- }
- .content-1{
-    gap: 100px;
- }
-
-}
-
-
-@media only screen and (max-width: 1167px) {
-    .logoFooter{
-        padding-left: 0;
-    }
-    .footer{
+    .footer {
         display: flex;
-        flex-direction: column;
-        padding: 60px 41px 40px 41px;
-        flex-direction: column;
-
-        gap: 50px;
-
+        gap: 174px;
+        min-height: 420px;
+        background: #16141F;
+        padding: 0 323px;
     }
-    .content-1{
+
+    .content-1 {
         display: flex;
-        width: 604px;
-        /* align-items: flex-end; */
-        gap: 80px;
-        padding-left: 28px;
-    }
-    .content-2{
-        justify-content: start;
-        padding-left: 28px;
-        margin-top: 0;
-    }
-    .contentSmall{
-        padding-top: 0;
+
+        gap: 174px;
+        width: max-content;
+
     }
     .menu-items-container{
-        padding-top: 65px;
+        padding-top: 124px;
     }
-}
-@media only screen and (max-width: 743px) {
+    .contentSmall{
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        width: max-content;
+        padding-top: 57px;
+    }
+
+    .content-2 {
+        display: flex;
+        gap: 190px;
+        margin-top: 124px;
+    }
+
+    .text-container {
+        width: 320px;
+    }
+
+    .text-container span {
+        color: #D0D0D0;
+        font-family: 'Golos', sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .contact-icons-container {
+        display: flex;
+        gap: 30px;
+        padding-top: 5px;
+    }
+
+    .menu-items-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .menu-items-container>ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-headline {
+        color: #FFF;
+        font-family: 'Golos', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .menu-items-container>ul>li {
+        list-style: none;
+        color: #D0D0D0;
+        font-family: 'Golos', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        width: 468px;
+        height: max-content;
+        gap: 18px;
+    }
+
+    .email-line {
+        display: flex;
+        gap: 40px;
+    }
+
+    .email {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .email span {
+        color: #D0D0D0;
+        font-family: 'Golos', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .note {
+        color: #D0D0D0;
+        font-family: 'Golos', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .time-line span {
+        color: #D0D0D0;
+        font-family: 'Golos', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .time-line {
+        display: flex;
+        gap: 10px;
+    }
+
+    .input-container {
+        display: flex;
+        gap: 8px;
+    }
+
+    .input-wrapper {
+        display: flex;
+        align-items: center;
+        background: #FFF;
+        border-radius: 8px;
+        padding: 0 16px;
+        width: 335px;
+    }
+
+    .input-wrapper input:focus {
+        border: none;
+        outline: none;
+    }
+
+    .input-wrapper input {
+        border: none;
+        width: 100%;
+    }
+
+    .privacy-content span {
+        color: rgba(255, 255, 255, 0.30);
+        font-family: 'Golos', sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+
+    @media only screen and (max-width: 1550px) {
+
+    .footer   {
+        padding: 0 233px;
+        gap: 100px;
+    }
+    .content-1{
+        gap: 100px;
+    }
+
+    }
+    @media only screen and (max-width: 1250px) {
+    .content-1 {
+        gap: 50px;
+    }
+    .footer {
+        gap: 50px;
+    }
+    }
+    @media only screen and (max-width: 1200px) {
+    .content-1 {
+        gap: 30px;
+    }
+    .footer {
+        gap: 30px;
+    }
+    }
+
+    @media only screen and (max-width: 1167px) {
+        .logoFooter{
+            padding-left: 0;
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            padding: 60px 41px 40px 41px;
+            flex-direction: column;
+
+            gap: 50px;
+
+        }
+        .content-1{
+            display: flex;
+            width: 604px;
+            /* align-items: flex-end; */
+            gap: 80px;
+            padding-left: 28px;
+        }
+        .content-2{
+            justify-content: start;
+            padding-left: 28px;
+            margin-top: 0;
+        }
+        .contentSmall{
+            padding-top: 0;
+        }
+        .menu-items-container{
+            padding-top: 65px;
+        }
+    }
+    @media only screen and (max-width: 743px) {
     .text-container{
         display: none;
     }
@@ -339,7 +351,7 @@ export default {
         display: flex;
         padding: 60px 20px 40px 20px;
         flex-direction: column;
-        align-items: center;
+
         gap: 50px;
     }
     .content-1{

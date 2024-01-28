@@ -203,6 +203,16 @@ export default {
   font-weight: 400;
   line-height: normal;
 }
+@media only screen and (max-width: 1167px) {
+  .card-texts-wrapper {
+  max-width: 100%;
+}
+  .card {
+
+  max-width: 100%;
+
+}
+}
 @media only screen and (max-width: 743px) {
   .neonmanContener{
     display: none;
@@ -218,7 +228,15 @@ export default {
   .cards-section{
     padding: 0;
   }
+  .card-image img {
+  max-width: 100% ;
+  height: auto;
+  display: block;
+}
 
+  .card-image-info-wrapper {
+      width: 100%;
+}
 }
 
 

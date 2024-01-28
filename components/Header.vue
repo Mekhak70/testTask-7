@@ -158,6 +158,20 @@ export default {
     gap: 40px;
   }
 }
+@media only screen and (max-width: 1366px) {
+  .menu ul {
+    gap: 20px;
+  }
+
+}
+
+
+@media only screen and (max-width: 1280px) {
+  .menu ul {
+    gap: 15px;
+  }
+}
+
 @media only screen and (max-width: 1167px) {
   .hamburger-menu{
   display: flex;
