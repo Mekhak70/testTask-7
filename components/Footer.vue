@@ -273,6 +273,27 @@ export default {
     font-weight: 500;
     line-height: normal;
 }
+
+@media only screen and (max-width: 1420px) {
+  /* Hide the menu on screens with a maximum width of 744px */
+  /* .footer {
+    gap: 30px;
+ } */
+
+}
+@media only screen and (max-width: 1550px) {
+  /* Hide the menu on screens with a maximum width of 744px */
+  .footer   {
+    padding: 0 233px;
+    gap: 100px;
+ }
+ .content-1{
+    gap: 100px;
+ }
+
+}
+
+
 @media only screen and (max-width: 744px) {
     .logoFooter{
         padding-left: 0;

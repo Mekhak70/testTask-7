@@ -81,6 +81,13 @@ export default {
     align-items: center;
     justify-content: center;
 }
+@media only screen and (max-width: 1550px) {
+  /* Hide the menu on screens with a maximum width of 744px */
+  .cards-section {
+    padding: 80px 233px;  }
+  
+}
+
 @media only screen and (max-width: 744px) {
   /* Hide the menu on screens with a maximum width of 744px */
   .cards-section {

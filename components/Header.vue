@@ -153,6 +153,11 @@ export default {
 .hamburger-menu{
   display: none;
 }
+@media only screen and (max-width: 1450px) {
+  .menu{
+    gap: 40px;
+  }
+}
 @media only screen and (max-width: 744px) {
   .hamburger-menu{
   display: flex;

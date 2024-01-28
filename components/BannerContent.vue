@@ -552,6 +552,14 @@ flex-direction: column-reverse;
         overflow: hidden;
     }
 }
+@media only screen and (max-width: 1470px) {
+  /* Hide the menu on screens with a maximum width of 744px */
+  .imgWrap {
+    width: 680px;
+    height: 675px;
+  }
+
+}
 @media only screen and (max-width: 744px) {
     .card{
         display: flex;
