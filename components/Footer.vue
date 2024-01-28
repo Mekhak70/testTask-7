@@ -193,7 +193,7 @@ export default {
     .contact-box {
         display: flex;
         flex-direction: column;
-        width: 468px;
+        width: 100%;
         height: max-content;
         gap: 18px;
     }
@@ -334,6 +334,9 @@ export default {
         .menu-items-container{
             padding-top: 65px;
         }
+        .text-container{
+        width: 72%;
+    }
     }
     @media only screen and (max-width: 743px) {
     .text-container{
