@@ -8,7 +8,7 @@
 
 <script>
 // Import both components. Adjust paths as necessary.
-import Banner from '@/components/banner.vue';
+import Banner from '@/components/Banner.vue';
 import CardsSection from '@/components/CardsSection.vue';
 import Footer from '@/components/Footer.vue';
 

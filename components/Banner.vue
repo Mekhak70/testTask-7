@@ -11,7 +11,7 @@
 
 <script>
 // Import both components. Adjust paths as necessary.
-import HeaderComp from '@/components/header.vue';
+import HeaderComp from '@/components/Header.vue';
  import BannerContent from '@/components/BannerContent.vue';
 
 
