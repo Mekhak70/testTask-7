@@ -647,6 +647,11 @@ flex-direction: column-reverse;
 .contenet{
     height: 705px;
 }
-
+.select{
+        width: 100%;
+    }
+    .inputBox input {
+       width: 304px;
+    }
 }
 </style>
