@@ -12,7 +12,8 @@ export const cardsData = {
             будут ассоциативно распределены по отраслям.
             Являясь всего лишь частью общей картины, многие известные личности подвергнуты целой серии независимых исследований.
             `,
-            imageSrc: `${require('@/public/card-images/Image-1.png')}`,
+            // imageSrc: `${require('/card-images/Image-1.png')}`,
+            imageSrc: '/card-images/Image-1.png',
             date: '08 января 2024',
             viewNumber: '16.244'
         },
@@ -27,7 +28,8 @@ export const cardsData = {
             перспективное планирование способствует повышению качества приоретизации разума над эмоциями. Лишь многие известные 
             личности формируют глобальную экономическую сеть и при этом — заблокированы в рамках своих собственных рациональных ограничений.
             `,
-            imageSrc: `${require('@/public/card-images/Image-2.png')}`,
+            // imageSrc: `${require('/card-images/Image-2.png')}`,
+            imageSrc: '/card-images/Image-2.png',
             date: '11 января 2024',
             viewNumber: '15.898'
         },
@@ -42,7 +44,8 @@ export const cardsData = {
             на независимые элементы. Господа, постоянный количественный рост и сфера нашей активности предопределяет 
             высокую востребованность новых принципов формирования материально-технической и кадровой базы.
             `,
-            imageSrc: `${require('@/public/card-images/Image-3.png')}`,
+            // imageSrc: `${require('/card-images/Image-3.png')}`,
+            imageSrc: '/card-images/Image-3.png',
             date: '12 января 2023',
             viewNumber: '15.458'
         },
@@ -58,7 +61,8 @@ export const cardsData = {
             рациональное мышление однозначно определяет каждого участника как способного принимать собственные решения 
             касаемо анализа существующих паттернов поведения.
             `,
-            imageSrc: `${require('@/public/card-images/Image-4.png')}`,
+            // imageSrc: `${require('/card-images/Image-4.png')}`,
+            imageSrc: '/card-images/Image-4.png',
             date: '06 января 2024',
             viewNumber: '15.228'
         },
@@ -67,7 +71,8 @@ export const cardsData = {
     sideCards: [
         {
             id: 1,
-            companyIconSrc: `${require('@/public/company-logos/logo-1.png')}`,
+            // companyIconSrc: `${require('/company-logos/logo-1.png')}`,
+            companyIconSrc: '/company-logos/logo-1.png',
             companyName: 'Bilzzars | новости о crypto',
             content: `
             А также стремящиеся вытеснить традиционное производство, нанотехнологии обнародованы.
@@ -77,13 +82,15 @@ export const cardsData = {
             значение своевременного выполнения сверхзадачи. В рамках спецификации современных стандартов,
             активно развивающиеся страны третьего мира лишь добавляют фракционных разногласий и объединены в целые кластеры себе подобных.
             `,
-            image: `${require('@/public/side-bar-card-images/side-bar-image-1.png')}`,
+            // image: `${require('/side-bar-card-images/side-bar-image-1.png')}`,
+            image: '/side-bar-card-images/side-bar-image-1.png',
             date: '08 января 2024',
             viewNumber: '16.244'
         },
         {
             id: 2,
-            companyIconSrc: `${require('@/public/company-logos/logo-2.png')}`,
+            // companyIconSrc: `${require('/company-logos/logo-2.png')}`,
+            companyIconSrc: '/company-logos/logo-2.png',
             companyName: 'ForkLog',
             content: `
             Безусловно, сплочённость команды профессионалов не даёт нам иного выбора, кроме определения поэтапного 
@@ -99,7 +106,8 @@ export const cardsData = {
         },
         {
             id: 3,
-            companyIconSrc: `${require('@/public/company-logos/logo-3.png')}`,
+            // companyIconSrc: `${require('/company-logos/logo-3.png')}`,
+            companyIconSrc: '/company-logos/logo-3.png',
             companyName: 'Крипто Аналитик',
             content: `
             Повседневная практика показывает, что высокое качество позиционных исследований предполагает 
@@ -117,7 +125,8 @@ export const cardsData = {
         },
         {
             id: 1,
-            companyIconSrc: `${require('@/public/company-logos/logo-4.png')}`,
+            // companyIconSrc: `${require('/company-logos/logo-4.png')}`,
+            companyIconSrc: '/company-logos/logo-4.png',
             companyName: 'РБК-Крипто',
             content: `
             Следует отметить, что новая модель организационной деятельности позволяет оценить
@@ -127,7 +136,8 @@ export const cardsData = {
             функционально разнесены на независимые элементы. Также как высокое качество позиционных
             исследований представляет собой интересный эксперимент проверки стандартных подходов.
             `,
-            image: `${require('@/public/side-bar-card-images/side-bar-image-2.png')}`,
+            // image: `${require('/side-bar-card-images/side-bar-image-2.png')}`,
+            image: '/side-bar-card-images/side-bar-image-2.png',
             date: '08 января 2024',
             viewNumber: '16.244'
         },
