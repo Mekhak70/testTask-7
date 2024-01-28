@@ -529,11 +529,11 @@ input[type="number"] {
   }
   .title{
     color: #FFF;
-    font-family: Golos;
+    font-family: 'Golos', sans-serif;
     font-size: 85px;
     font-style: normal;
     font-weight: 900;
-    line-height: 75px; /* 88.235% */
+    line-height: 75px; 
     text-transform: uppercase;
   }
   .bannerContenetConteiner{
@@ -543,7 +543,7 @@ input[type="number"] {
     padding-top: 30px;
     width: 406px;
     color: var(--Grey-Light, #D0D0D0);
-    font-family: Golos;
+    font-family: 'Golos', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -712,7 +712,7 @@ flex-direction: column-reverse;
   }
   .title{
     color: #FFF;
-    font-family: Golos;
+    font-family: 'Golos', sans-serif;
     font-size: 71px;
     font-style: normal;
     font-weight: 900;
@@ -725,7 +725,7 @@ flex-direction: column-reverse;
 .text{
     width: 100%;
     color: var(--Grey-Light, #D0D0D0);
-    font-family: Golos;
+    font-family: 'Golos', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;

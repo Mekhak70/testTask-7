@@ -384,8 +384,8 @@ export default {
 }
 .menu-headline{
     padding-bottom: 6px;
-    color: var(--White, #FFF);
-    font-family: Golos;
+    color:  #FFF;
+    font-family: 'Golos', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -393,9 +393,9 @@ export default {
     text-transform: uppercase;
 }
 .menu-headline ul li{
-    color: var(--Grey-Light, #D0D0D0);
+    color:  #D0D0D0;
     /* Menu */
-    font-family: Golos;
+    font-family: 'Golos', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
