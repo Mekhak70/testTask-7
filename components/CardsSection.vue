@@ -84,12 +84,21 @@ export default {
 @media only screen and (max-width: 744px) {
   /* Hide the menu on screens with a maximum width of 744px */
   .cards-section {
-
     padding: 60px 50px ;
     flex-direction: column;
   }
   .side-bar{
         display: none;
     }
+
+}
+@media only screen and (max-width: 390px) {
+  /* Hide the menu on screens with a maximum width of 744px */
+  .cards-section {
+    padding:0;
+  }
+  .button-wrapper{
+    padding-bottom: 40px;
+  }
 }
 </style>

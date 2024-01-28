@@ -28,7 +28,7 @@
                         <span class="dolarIcon">
                             $
                         </span>
-                        <input type="number"/>
+                        <input type="number" class="numberInput"/>
                     </div>
                     </div>
                     <div class="criptoBarContener">
@@ -72,13 +72,10 @@
                                         <span class="criptoShortName">XMR</span>
 
                                     </div>
-
-
                                 </div>
                                 <div class="criptoPrice">
                                     155.70
                                 </div>
-
                             </div>
                             <div class="criptoBox">
                                 <div class="criptoName">
@@ -156,15 +153,11 @@ export default {
         width: 100%;
         display: flex;
         justify-content: flex-end;
+
     }
     .bannerContenet{
         display: flex;
         width: 83.17%;
-
-        /* background-image: url('@/public/banner-cover/wave.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; */
     }
     .contenet{
         width: 85.236%;
@@ -265,7 +258,6 @@ export default {
         width: 81px;
         height: 33px;
         position: absolute;
-
         top: 15px;
         right: 0;
         background-color: rgba(255, 255, 255, );
@@ -533,6 +525,7 @@ flex-direction: column-reverse;
 
 }
   .dataContener{
+
     gap: 0;
   }
   .criptoBarSection{
@@ -550,6 +543,7 @@ flex-direction: column-reverse;
     height: 737px;
     flex-shrink: 0;
     overflow: hidden;
+    z-index: 9999;
 
     }
     .imgWrap img{
@@ -569,5 +563,90 @@ flex-direction: column-reverse;
         background: #171520;
         box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.15);
     }
+}
+@media only screen and (max-width: 390px) {
+  .neonmanContener{
+    display: none;
+  }
+  .cards-container{
+    padding: 20px;
+  }
+  .card{
+    display: flex;
+    width: 350px;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .bannerContenet{
+    padding: 0 20px;
+  }
+  .dataContener{
+    padding-top: 0;
+  }
+  .title{
+    color: #FFF;
+    font-family: Golos;
+    font-size: 71px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 65px; /* 91.549% */
+    text-transform: uppercase;
+  }
+  .title span{
+    white-space: wrap;
+ }
+.text{
+    width: 350px;
+    color: var(--Grey-Light, #D0D0D0);
+    font-family: Golos;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    padding-top: 20px;
+}
+.changeConterner{
+    padding-top:25px;
+}
+.criptoBarContener{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+.criptoBarContener{
+    height: 196px;
+}
+.criptoBarSection{
+    gap: 20px;
+}
+.inputBox{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 9999;
+    }
+.inputBox select{
+    position: relative;
+    width: 350px;
+    display: flex;
+    height: 57px;
+    padding: 15px 23px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+.inputBox{
+    width: 350px;
+}
+
+.contenet{
+    height: 705px;
+}
+
 }
 </style>

@@ -148,20 +148,16 @@ export default {
   .hamburger-menu{
   display: flex;
 }
-  /* Hide the menu on screens with a maximum width of 744px */
+
   .menu ul {
     display: none;
   }
 
-  /* Adjust header styles for smaller screens */
+
   .header {
    width: 100%;
-
-
-    /* Check if this padding is having the desired effect */
   }
 
-  /* Style for logOutText */
   .logOutText {
     color: var(--Grey-Light, #D0D0D0); /* Make sure --Grey-Light is defined and has a valid value */
     font-family: Golos;
@@ -197,10 +193,6 @@ export default {
     flex-shrink: 0;
   }
 
-
-
-
-/** */
 
 #menu__toggle {
   opacity: 0;
@@ -294,9 +286,7 @@ export default {
   line-height: normal;
   text-transform: uppercase;
 }
-.menu__item:hover {
-  background-color: #CFD8DC;
-}
+
 .hamburger-menu{
   position: fixed;
   z-index: 9999;
@@ -328,6 +318,47 @@ export default {
   font-weight: 900;
   line-height: normal;
 }
+}
+@media only screen and (max-width: 390px) {
+  .logOut{
+    display: none;
+  }
+  .menu__btnContener{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 142px;
+  }
+  .BannerContent{
+    padding-top: 40px;
+  }
+  .logo{
+    padding: 0 20px 28px;
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+  }
+  .logoImg{
+    width: 145px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  .dataContener{
+    padding-top: 0;
+  }
+  .menu__box{
+    left: -125%;
+  }
+  .menu__btn{
+    left: 20px;
+  }
+
+#menu__toggle:checked ~ .logoImg img{
+  width: 145px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
 }
 
 </style>

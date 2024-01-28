@@ -2,7 +2,7 @@
     <div class="footer">
         <div class="content-1">
         <div class="contentSmall">
-            <div class="logo">
+            <div class="logoFooter">
                 <img :src="logoSrc" alt="Logo" />
             </div>
             <div class="text-container">
@@ -60,7 +60,7 @@
 
                 <div class="input-container">
                     <div class="input-wrapper">
-                        <input />
+                        <input type="text"/>
                     </div>
                     <Button text="Подписаться" verticalPadding="13px" horizontalPadding="26px" fontSize="12px" />
                 </div>
@@ -274,6 +274,9 @@ export default {
     line-height: normal;
 }
 @media only screen and (max-width: 744px) {
+    .logoFooter{
+        padding-left: 0;
+    }
     .footer{
         display: flex;
         flex-direction: column;
@@ -301,5 +304,102 @@ export default {
     .menu-items-container{
         padding-top: 65px;
     }
+}
+@media only screen and (max-width: 390px) {
+    .text-container{
+        display: none;
+    }
+    .contentSmall{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 48px;
+        gap: 64px;
+    }
+    .footer{
+        display: flex;
+        padding: 60px 20px 40px 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .content-1{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        gap: 40px;
+    }
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .contact-icons-container{
+        padding-top: 0;
+        gap: 10px;
+    }
+    .contact-icons-container img{
+        width: 30.625px;
+        height: 35px;
+    }
+    .logoFooter img{
+        width: 173.693px;
+        height: 44.764px;
+        flex-shrink: 0;
+    }
+    .menu-items-container {
+    padding-top: 0;
+}
+.menu-headline{
+    padding-bottom: 6px;
+    color: var(--White, #FFF);
+    font-family: Golos;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.menu-headline ul li{
+    color: var(--Grey-Light, #D0D0D0);
+    /* Menu */
+    font-family: Golos;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+.contact-box{
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+
+}
+.input-wrapper{
+    width: 316px;
+    height: 6px;
+    display: flex;
+    padding: 17px 16px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+.email-line{
+    display: flex;
+    flex-direction: column;
+}
+.note{
+    display: none;
+}
+.content-2{
+    padding-left: 0;
+}
+.time-line{
+    align-items: center;
+}
 }
 </style>

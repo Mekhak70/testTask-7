@@ -45,6 +45,7 @@ export default {
   color: white; /* White text */
   text-align: center; /* Centered text */
   background-image: url('@/public/banner-cover/cover.jpg');
+  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -64,5 +65,10 @@ export default {
   .banner{
     height: 1065px;
   }
+}
+@media only screen and (max-width: 390px) {
+.banner{
+    height: 845px;
+}
 }
 </style>

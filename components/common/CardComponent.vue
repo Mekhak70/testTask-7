@@ -203,6 +203,23 @@ export default {
   font-weight: 400;
   line-height: normal;
 }
+@media only screen and (max-width: 390px) {
+  .neonmanContener{
+    display: none;
+  }
+  .card{
+    display: flex;
+    width: 100%;
+    padding:0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .cards-section{
+    padding: 0;
+  }
+  
+}
 
 
 </style>
