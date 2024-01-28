@@ -158,7 +158,7 @@ export default {
     gap: 40px;
   }
 }
-@media only screen and (max-width: 744px) {
+@media only screen and (max-width: 1167px) {
   .hamburger-menu{
   display: flex;
 }
@@ -331,7 +331,7 @@ export default {
   line-height: normal;
 }
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 743px) {
   .logOut{
     display: none;
   }

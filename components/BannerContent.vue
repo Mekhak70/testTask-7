@@ -476,8 +476,8 @@ input[type="number"] {
   }
 }
 
-@media only screen and (max-width: 744px) {
-  /* Hide the menu on screens with a maximum width of 744px */
+@media only screen and (max-width: 1167px) {
+
   .bannerContenet {
     width: 100%;
     padding: 0 75px 0 70px ;
@@ -553,14 +553,13 @@ flex-direction: column-reverse;
     }
 }
 @media only screen and (max-width: 1470px) {
-  /* Hide the menu on screens with a maximum width of 744px */
   .imgWrap {
     width: 680px;
     height: 675px;
   }
 
 }
-@media only screen and (max-width: 744px) {
+@media only screen and (max-width: 1167px) {
     .card{
         display: flex;
         width: 644px;
@@ -572,7 +571,7 @@ flex-direction: column-reverse;
         box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.15);
     }
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 743px) {
   .neonmanContener{
     display: none;
   }
@@ -581,6 +580,7 @@ flex-direction: column-reverse;
   }
   .card{
     display: flex;
+    
     width: 350px;
 
     flex-direction: column;
@@ -654,6 +654,7 @@ flex-direction: column-reverse;
 
 .contenet{
     height: 705px;
+    justify-content: center;
 }
 .select{
         width: 100%;

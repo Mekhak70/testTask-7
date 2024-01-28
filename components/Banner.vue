@@ -45,7 +45,7 @@ export default {
   color: white; /* White text */
   text-align: center; /* Centered text */
   background-image: url('@/public/banner-cover/cover.jpg');
-  
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -56,8 +56,7 @@ export default {
   flex-direction: column;
   align-items: center;
 }
-@media only screen and (max-width: 744px) {
-  /* Hide the menu on screens with a maximum width of 744px */
+@media only screen and (max-width: 1167px) {
   .BannerContent {
     width: 100%;
     padding: 44px 0 0;
@@ -66,7 +65,7 @@ export default {
     height: 1065px;
   }
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 743px) {
 .banner{
     height: 845px;
 }

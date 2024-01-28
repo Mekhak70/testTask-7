@@ -82,14 +82,14 @@ export default {
     justify-content: center;
 }
 @media only screen and (max-width: 1550px) {
-  /* Hide the menu on screens with a maximum width of 744px */
+
   .cards-section {
     padding: 80px 233px;  }
-  
+
 }
 
-@media only screen and (max-width: 744px) {
-  /* Hide the menu on screens with a maximum width of 744px */
+@media only screen and (max-width: 1167px) {
+
   .cards-section {
     padding: 60px 50px ;
     flex-direction: column;
@@ -99,8 +99,8 @@ export default {
     }
 
 }
-@media only screen and (max-width: 390px) {
-  /* Hide the menu on screens with a maximum width of 744px */
+@media only screen and (max-width: 743px) {
+
   .cards-section {
     padding:0;
   }
