@@ -286,7 +286,7 @@ export default {
     }
 
     }
-    @media only screen and (max-width: 1250px) {
+    @media only screen and (max-width: 1310px) {
     .content-1 {
         gap: 50px;
     }
