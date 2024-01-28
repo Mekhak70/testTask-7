@@ -435,4 +435,10 @@ export default {
     align-items: center;
 }
 }
+@media only screen and (max-width: 743px) {
+    .contact-box{
+        width: 100%;
+    }
+}
+
 </style>

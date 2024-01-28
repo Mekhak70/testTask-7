@@ -192,7 +192,7 @@ export default {
     display: block;
     position: fixed;
     top: 0;
-    left: -115%;
+    left: -122%;
     width: calc(50% - 100px);
     height: 100%;
     margin: 0;
@@ -380,7 +380,7 @@ export default {
   #menu__toggle:checked~.menu__btn {
     top: 40px;
     /* left: 50px; */
-    /* padding-left: 50px; 
+    /* padding-left: 50px;
      padding-right: 35px !important; */
 
     opacity: 1;
