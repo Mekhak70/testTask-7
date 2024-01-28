@@ -295,7 +295,7 @@ export default {
     position: fixed;
     top: 50px;
     left: 70px;
-    width: 50% !important;
+    width: 50% ;
     height: 40px;
     cursor: pointer;
     z-index: 1;
