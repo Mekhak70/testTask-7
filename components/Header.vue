@@ -27,7 +27,14 @@
       <li><a class="menu__item" href="#">FAQ</a></li>
       <li><a class="menu__item" href="#">о нас</a></li>
       <li><a class="menu__item" href="#">контакты</a></li>
+      <div class="setCont">
+      <span >войти</span>
+      <div class="lengSet"><span>RU</span>
+        <img :src="arrowSrc" alt="Arrow icon" />
+      </div>
+    </div>
     </ul>
+
   </div>
 
 
@@ -93,7 +100,9 @@ export default {
   align-items: center;
   flex-shrink: 0;
 }
-
+.setCont{
+  display: none;
+}
 .menu {
   display: flex;
   align-items: center;
@@ -258,7 +267,7 @@ export default {
   position: fixed;
   top: 0;
   left: -115%;
-  width: 100%;
+  width: calc(50% - 100px);
   height: 100%;
   margin: 0;
   padding: 145px 50px;
@@ -296,7 +305,7 @@ export default {
 .menu__btnContener{
   display: flex;
   align-items: center;
-  width: 659px;
+  width: 287px;
   justify-content: space-between;
 }
 .closeBatton{
@@ -306,8 +315,6 @@ export default {
   border-radius: 11px;
   background: #281941;
   display: flex;
-  width: 20px;
-  height: 19px;
   flex-direction: column;
   justify-content: center;
   color: var(--Grey-Light, #D0D0D0);
@@ -327,8 +334,14 @@ export default {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 142px;
+    gap: 111px;
   }
+  .menu__btnContener{
+  display: flex;
+  align-items: center;
+  width: 305px;
+  justify-content: space-between;
+}
   .BannerContent{
     padding-top: 40px;
   }
@@ -358,7 +371,30 @@ export default {
   height: 40px;
   flex-shrink: 0;
 }
-
+.menu__box {
+  width: 100%;
+}
+.setCont{
+  padding-top: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.setCont span{
+  color: var(--Grey-Light, #D0D0D0);
+/* Menu */
+  font-family: Golos;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.lengSet{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
 }
 
 </style>
